@@ -1235,6 +1235,18 @@ void SemanticAnalysis::exitRelExp(CACTParser::RelExpContext *ctx){ //
             addIRC( IR_J,
                     BTY_UNKNOWN,
                     ctx->false_label); // g4
+        } else{
+            ctx->result_name = newTemp(BTY_INT);
+            cact_op_t op = (typeutils.str_to_op)[ctx->relOp()->getText()];
+            IR_op_t IRop = (typeutils.op_to_condIR)[op];
+            addIRC( IR_L_ALLOC,
+                    BTY_INT,
+                    ctx->result_name);
+            addIRC( IRop,
+                    ctx->addExp()->self->basety,
+                    ctx->result_name,
+                    ctx->relExp()->result_name,
+                    ctx->addExp()->result_name);
         }
     }
     #endif

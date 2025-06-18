@@ -1,4 +1,4 @@
-// Generated from d:/Codefield/Complier/cc/grammar/CACT.g4 by ANTLR 4.13.1
+// Generated from /home/stu/CPLab/cc/grammar/CACT.g4 by ANTLR 4.13.1
 
     #include "cact_types.h"
     #include "SymbolTable.h"
@@ -52,6 +52,16 @@ public interface CACTListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitBType(CACTParser.BTypeContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CACTParser#arrayDims}.
+	 * @param ctx the parse tree
+	 */
+	void enterArrayDims(CACTParser.ArrayDimsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CACTParser#arrayDims}.
+	 * @param ctx the parse tree
+	 */
+	void exitArrayDims(CACTParser.ArrayDimsContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CACTParser#constDef}.
 	 * @param ctx the parse tree
@@ -113,16 +123,6 @@ public interface CACTListener extends ParseTreeListener {
 	 */
 	void exitFuncType(CACTParser.FuncTypeContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CACTParser#funcFParams}.
-	 * @param ctx the parse tree
-	 */
-	void enterFuncFParams(CACTParser.FuncFParamsContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link CACTParser#funcFParams}.
-	 * @param ctx the parse tree
-	 */
-	void exitFuncFParams(CACTParser.FuncFParamsContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link CACTParser#funcFParam}.
 	 * @param ctx the parse tree
 	 */
@@ -132,6 +132,26 @@ public interface CACTListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitFuncFParam(CACTParser.FuncFParamContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CACTParser#lab}.
+	 * @param ctx the parse tree
+	 */
+	void enterLab(CACTParser.LabContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CACTParser#lab}.
+	 * @param ctx the parse tree
+	 */
+	void exitLab(CACTParser.LabContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CACTParser#go}.
+	 * @param ctx the parse tree
+	 */
+	void enterGo(CACTParser.GoContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CACTParser#go}.
+	 * @param ctx the parse tree
+	 */
+	void exitGo(CACTParser.GoContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CACTParser#block}.
 	 * @param ctx the parse tree
@@ -143,25 +163,77 @@ public interface CACTListener extends ParseTreeListener {
 	 */
 	void exitBlock(CACTParser.BlockContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CACTParser#blockItem}.
+	 * Enter a parse tree produced by the {@code stmt_assign}
+	 * labeled alternative in {@link CACTParser#stmt}.
 	 * @param ctx the parse tree
 	 */
-	void enterBlockItem(CACTParser.BlockItemContext ctx);
+	void enterStmt_assign(CACTParser.Stmt_assignContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CACTParser#blockItem}.
+	 * Exit a parse tree produced by the {@code stmt_assign}
+	 * labeled alternative in {@link CACTParser#stmt}.
 	 * @param ctx the parse tree
 	 */
-	void exitBlockItem(CACTParser.BlockItemContext ctx);
+	void exitStmt_assign(CACTParser.Stmt_assignContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CACTParser#stmt}.
+	 * Enter a parse tree produced by the {@code stmt_exp}
+	 * labeled alternative in {@link CACTParser#stmt}.
 	 * @param ctx the parse tree
 	 */
-	void enterStmt(CACTParser.StmtContext ctx);
+	void enterStmt_exp(CACTParser.Stmt_expContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CACTParser#stmt}.
+	 * Exit a parse tree produced by the {@code stmt_exp}
+	 * labeled alternative in {@link CACTParser#stmt}.
 	 * @param ctx the parse tree
 	 */
-	void exitStmt(CACTParser.StmtContext ctx);
+	void exitStmt_exp(CACTParser.Stmt_expContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code stmt_block}
+	 * labeled alternative in {@link CACTParser#stmt}.
+	 * @param ctx the parse tree
+	 */
+	void enterStmt_block(CACTParser.Stmt_blockContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code stmt_block}
+	 * labeled alternative in {@link CACTParser#stmt}.
+	 * @param ctx the parse tree
+	 */
+	void exitStmt_block(CACTParser.Stmt_blockContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code stmt_if}
+	 * labeled alternative in {@link CACTParser#stmt}.
+	 * @param ctx the parse tree
+	 */
+	void enterStmt_if(CACTParser.Stmt_ifContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code stmt_if}
+	 * labeled alternative in {@link CACTParser#stmt}.
+	 * @param ctx the parse tree
+	 */
+	void exitStmt_if(CACTParser.Stmt_ifContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code stmt_while}
+	 * labeled alternative in {@link CACTParser#stmt}.
+	 * @param ctx the parse tree
+	 */
+	void enterStmt_while(CACTParser.Stmt_whileContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code stmt_while}
+	 * labeled alternative in {@link CACTParser#stmt}.
+	 * @param ctx the parse tree
+	 */
+	void exitStmt_while(CACTParser.Stmt_whileContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code stmt_bcr}
+	 * labeled alternative in {@link CACTParser#stmt}.
+	 * @param ctx the parse tree
+	 */
+	void enterStmt_bcr(CACTParser.Stmt_bcrContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code stmt_bcr}
+	 * labeled alternative in {@link CACTParser#stmt}.
+	 * @param ctx the parse tree
+	 */
+	void exitStmt_bcr(CACTParser.Stmt_bcrContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CACTParser#exp}.
 	 * @param ctx the parse tree
@@ -213,16 +285,6 @@ public interface CACTListener extends ParseTreeListener {
 	 */
 	void exitNumber(CACTParser.NumberContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CACTParser#funcRParams}.
-	 * @param ctx the parse tree
-	 */
-	void enterFuncRParams(CACTParser.FuncRParamsContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link CACTParser#funcRParams}.
-	 * @param ctx the parse tree
-	 */
-	void exitFuncRParams(CACTParser.FuncRParamsContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link CACTParser#primaryExp}.
 	 * @param ctx the parse tree
 	 */
@@ -252,6 +314,16 @@ public interface CACTListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitUnaryOp(CACTParser.UnaryOpContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CACTParser#funcRParams}.
+	 * @param ctx the parse tree
+	 */
+	void enterFuncRParams(CACTParser.FuncRParamsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CACTParser#funcRParams}.
+	 * @param ctx the parse tree
+	 */
+	void exitFuncRParams(CACTParser.FuncRParamsContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CACTParser#mulExp}.
 	 * @param ctx the parse tree

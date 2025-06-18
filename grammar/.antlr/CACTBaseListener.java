@@ -1,4 +1,4 @@
-// Generated from d:/Codefield/Complier/cc/grammar/CACT.g4 by ANTLR 4.13.1
+// Generated from /home/stu/CPLab/cc/grammar/CACT.g4 by ANTLR 4.13.1
 
     #include "cact_types.h"
     #include "SymbolTable.h"
@@ -65,6 +65,18 @@ public class CACTBaseListener implements CACTListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitBType(CACTParser.BTypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterArrayDims(CACTParser.ArrayDimsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitArrayDims(CACTParser.ArrayDimsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -142,18 +154,6 @@ public class CACTBaseListener implements CACTListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFuncFParams(CACTParser.FuncFParamsContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitFuncFParams(CACTParser.FuncFParamsContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterFuncFParam(CACTParser.FuncFParamContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -161,6 +161,30 @@ public class CACTBaseListener implements CACTListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitFuncFParam(CACTParser.FuncFParamContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterLab(CACTParser.LabContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitLab(CACTParser.LabContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterGo(CACTParser.GoContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitGo(CACTParser.GoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -178,25 +202,73 @@ public class CACTBaseListener implements CACTListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBlockItem(CACTParser.BlockItemContext ctx) { }
+	@Override public void enterStmt_assign(CACTParser.Stmt_assignContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBlockItem(CACTParser.BlockItemContext ctx) { }
+	@Override public void exitStmt_assign(CACTParser.Stmt_assignContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterStmt(CACTParser.StmtContext ctx) { }
+	@Override public void enterStmt_exp(CACTParser.Stmt_expContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitStmt(CACTParser.StmtContext ctx) { }
+	@Override public void exitStmt_exp(CACTParser.Stmt_expContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterStmt_block(CACTParser.Stmt_blockContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitStmt_block(CACTParser.Stmt_blockContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterStmt_if(CACTParser.Stmt_ifContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitStmt_if(CACTParser.Stmt_ifContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterStmt_while(CACTParser.Stmt_whileContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitStmt_while(CACTParser.Stmt_whileContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterStmt_bcr(CACTParser.Stmt_bcrContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitStmt_bcr(CACTParser.Stmt_bcrContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -262,18 +334,6 @@ public class CACTBaseListener implements CACTListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFuncRParams(CACTParser.FuncRParamsContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitFuncRParams(CACTParser.FuncRParamsContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterPrimaryExp(CACTParser.PrimaryExpContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -305,6 +365,18 @@ public class CACTBaseListener implements CACTListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitUnaryOp(CACTParser.UnaryOpContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterFuncRParams(CACTParser.FuncRParamsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFuncRParams(CACTParser.FuncRParamsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

@@ -100,6 +100,13 @@ typedef enum{
     IR_J,
     IR_G_ALLOC,    //全局变量声明
     IR_L_ALLOC,    //局部变量声明
+
+    IR_LEQ,
+    IR_GEQ,
+    IR_LT,
+    IR_GT,
+    IR_EQ,
+    IR_NEQ,
 }IR_op_t;
 
 typedef struct{
@@ -186,6 +193,15 @@ class TypeUtils {
         {OP_NEQ, IR_BNE},
     };
 
+    std::map <cact_op_t, IR_op_t> op_to_condIR{
+        {OP_LEQ, IR_LEQ},
+        {OP_GEQ, IR_GEQ},
+        {OP_LT,  IR_LT},
+        {OP_GT,  IR_GT},
+        {OP_EQ,  IR_EQ},
+        {OP_NEQ, IR_NEQ},
+    };
+
     std::map <IR_op_t, std::string> IRop_to_str{
         {IR_LABEL,      "Label"},
         {IR_FUNC_BEGIN, "Func Begin"},
@@ -212,6 +228,13 @@ class TypeUtils {
         {IR_J,          "J"},
         {IR_G_ALLOC,    "G_Alloc"},//全局变量声明
         {IR_L_ALLOC,    "L_Alloc"},//局部变量声明
+
+        {IR_EQ,         "EQ"},
+        {IR_NEQ,        "NEQ"},
+        {IR_LT,         "LT"},
+        {IR_GT,         "GT"},
+        {IR_LEQ,        "LEQ"},
+        {IR_GEQ,        "GEQ"},
     };
     #endif
 };
